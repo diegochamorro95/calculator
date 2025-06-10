@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#front-cover {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    width: 40vw;
+    height: 60vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    gap: 8px;
+}
+
+#display {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+    width: 100%;
+    height: 30%;
+    box-sizing: border-box;
+    background-color: #b6d1c2;
+    font-family: 'Calculator', sans-serif;
+    font-size: 2rem;
+}
+#display-input{
+
+}
+#display-result{
+    text-align:right;
+}
+
+#keypad {
+    display: flex;
+    width: 100%;
+    height: 70%;
+    box-sizing: border-box;
+    gap: 8px;
+}
+#num-keys {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 4px;
+    width: 60%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.num-key {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc((100% - 16px) / 4);
+    width: calc((100% - 20px) / 3);
+    border: 1px solid black;
+    font-size: 2rem;
+    border-radius: 8px;
+}
+
+.num-key:hover, .op-key:hover, #del-key:hover, #ac-key:hover {
+    background-color: burlywood;
+}
+
+#op-keys {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 4px;
+    width: 40%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.op-key, #del-key,#ac-key {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc((100% - 16px) / 4);
+    width: calc((100% - 20px) / 2);
+    border: 1px solid black;
+    font-size: 2rem;
+    border-radius: 8px;
+    flex-grow: 1;
+}
+
+#del-key,#ac-key {
+    background-color: salmon;
+}

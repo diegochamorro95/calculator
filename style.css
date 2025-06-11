@@ -84,7 +84,7 @@ main {
     height: 100%;
     box-sizing: border-box;
 }
-.op-key, #del-key,#ac-key {
+.op-key, #solve-key {
     display: flex;
     align-items: center;
     justify-content: center;

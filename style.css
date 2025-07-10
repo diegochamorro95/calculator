@@ -21,6 +21,7 @@ main {
     overflow: hidden;
     box-sizing: border-box;
     gap: 8px;
+    background-color: #343148;
 }
 
 #display {
@@ -33,7 +34,7 @@ main {
     box-sizing: border-box;
     background-color: #b6d1c2;
     font-family: 'Calculator', sans-serif;
-    font-size: 2rem;
+    font-size: 4rem;
 }
 #display-input{
 
@@ -74,7 +75,7 @@ main {
     background-color: burlywood;
 }
 
-#op-keys {
+#op-keys{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -84,7 +85,7 @@ main {
     height: 100%;
     box-sizing: border-box;
 }
-.op-key, #solve-key {
+.op-key, #solve-key, #ac-key, #del-key  {
     display: flex;
     align-items: center;
     justify-content: center;
